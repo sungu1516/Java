@@ -1,0 +1,15 @@
+package com.day;
+
+public class note {
+
+	String name = "LeeSungu";
+
+	public static void main(String[] args) {
+		
+		int age = 28;
+		String name = "Sun";
+		
+		System.out.printf("제 나이는 %d살이고, 제 이름은 %s입니다", age, name);
+		
+	}
+}

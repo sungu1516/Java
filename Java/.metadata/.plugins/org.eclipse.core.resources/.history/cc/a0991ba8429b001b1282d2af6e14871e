@@ -1,0 +1,59 @@
+package com.day;
+
+public class Note {
+
+	public static void main(String[] args) {
+
+//	String text2 = "helloworld";
+//	
+//	
+//	if (text_f() == text2)
+//		System.out.println("두 주소가 같다");
+//	else
+//		System.out.println("두 주소가 다르다");
+//
+//	}
+//
+//	static String text_f() {
+//		return new String("helloworld");
+//	}
+//	
+//	static String text = "helloworld";
+		
+			//적용
+			
+			int [] arr = {100, 200};
+			tostr(arr[0]);   // 이 경우 함수 인자의 n과 arr[0]의 주소는 다름        
+			System.out.println(arr[0]);
+			tostr(arr);     // 이 경우, 함수 인자의 n과 arr의 주소는 동일
+			System.out.println(arr[0]);
+			
+			
+			String[] t_0 = new String[1];
+			t_0[0] = "hello";
+			String[] t_1 = new String[1];
+			t_1 = t_0;
+			t_1[0] = "revised?";
+			System.out.println(t_0[0]);
+		
+	}
+	
+	// 인트 값을 인자로 하는 함수 
+	static int tostr(int n) {
+		n = 1000;
+		return n;
+	}
+	
+	// 배열을 인자로 하는 함수
+	static int tostr(int[] n) {
+		n[0] = 1;
+		return n[0];
+	}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,101 @@
+package com.day;
+
+import java.util.ArrayList;
+
+public class Note {
+
+	public static void main(String[] args) {
+		add_2darr_to_list();
+	}
+
+	static void add_2darr_to_list() {
+		// 리스트에 2차배열 넣어보기
+
+		ArrayList<int[][]> list2 = new ArrayList<int[][]>();
+
+		// 2차배열 만들기
+
+		int[] array = { 7, 8, 9 };
+		int[][] array_int = { { 1, 2, 3 }, { 4, 5, 6 }, array };
+
+		System.out.println(array_int.length);
+
+		list2.add(array_int);
+		list2.add(array_int);
+
+		// 리스트 안의 배열 출력(원소단위로)
+
+		for (int i = 0; i < list2.size(); i++) {
+			for (int j = 0; j < list2.get(i).length; j++) {
+				for (int k = 0; k < list2.get(i)[j].length; k++) {
+					System.out.println(list2.get(i)[j][k]);
+				}
+			}
+
+		}
+
+		// 새로운 3차 배열을 만들고, 이 배열 안에 위 값을 넣어본다.
+
+		int[][][] arr3 = new int[list2.size()][][];
+		
+		System.out.println(arr3.size());
+		for (int i = 0; i < arr3.length; i++) { // 하위 2차배열의 크기 설정 (주소 할당)
+			for (int j = 0; j < list2.get(i).length; j++) {
+				arr3[i][j] = new int[list2.get(i)[j].length];
+				System.out.println(arr3[i][j]);
+			}
+		}
+
+	}
+
+	static void add_arr_to_list() {
+		ArrayList<int[]> array_list = new ArrayList<int[]>(); // 크기 설정할 필요가 없다.
+
+		// 다양한 배열을 생성. 1차와 2차 모두 존재.
+		int[] arr1 = new int[5];
+		int[] arr2 = new int[5];
+
+		int[][] arr3 = new int[3][]; // 3개의 공간 만들어주기. arr3이라는 2차배열 자체에 주소 할당
+		System.out.println(arr3);
+		System.out.println(arr3[0]); // 하지만 3개의 각 공간에는 아직 주소 할당이 안됨.
+
+		// 이제 위에서 만든 배열을 리스트 안에 넣어보자.
+
+		// 우선 1차 배열 안에 원소를 넣고, 리스트 안에 넣자
+
+		for (int i = 0; i < arr2.length; i++) {
+			arr2[i] = i;
+		}
+		for (int i = 0; i < arr1.length; i++) {
+			arr1[i] = i;
+		}
+
+		array_list.add(arr1);
+		array_list.add(arr2);
+
+		// 2차배열도 넣어보자. 먼저 원소를 넣고 2차배열이 완성된 후 리스트 안에 넣자. 이 때, 해당 리스트에는 1차 배열만 들어갈 수 있으므로
+		// 주의.
+
+		for (int i = 0; i < arr3.length; i++) {
+			arr3[i] = new int[5]; // arr3이라는 2차배열 안에 3개의 일차배열이 존재, 각 배열의 크기를 차례대로 지정(총 5개의 원소가 들어갈 수 있다.)
+			// System.out.println(arr3[i]); // 3개의 배열의 주소값이 출력됨. 위의 코드를 통해 주소가 할당되었음을 알 수
+			// 있다.
+			for (int j = 0; j < arr3[i].length; j++) {
+				arr3[i][j] = j; // for 구문을 통해 1차배열 안에 원소를 넣어준다.
+				// System.out.println(arr3[i][j]);
+			}
+		}
+
+		for (int i = 0; i < arr3.length; i++) { // 리스트엔 1차배열밖에 들어가지 못하므로 for문 이용해 차례대로 넣어준다.
+			array_list.add(arr3[i]);
+		}
+
+		// 이제 리스트 안의 모든 배열 안에 원소값이 들어감. 이를 모두 출력해보자.
+
+		for (int i = 0; i < array_list.size(); i++) {
+			for (int j = 0; j < array_list.get(i).length; j++) {
+				System.out.println(array_list.get(i)[j]);
+			}
+		}
+	}
+}

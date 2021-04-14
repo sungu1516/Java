@@ -1,0 +1,36 @@
+package com.day;
+
+public class Note {
+
+	public static void main(String[] args) {
+
+		String text1 = "helloworld";
+		String text2 = new String("helloworld");
+		
+
+		if (text1.equals(text2))
+			System.out.println("두 문자열은 같다");
+		else
+			System.out.println("두 문자열은 다르다");
+
+	}
+
+	static String text_f() {
+		return new String("helloworld");
+	}
+
+	static String text = "helloworld";
+
+	// 인트 값을 인자로 하는 함수
+	static int tostr(int n) {
+		n = 1000;
+		return n;
+	}
+
+	// 배열을 인자로 하는 함수
+	static int tostr(int[] n) {
+		n[0] = 1;
+		return n[0];
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.day;
+
+public class Note {
+
+	public static void main(String[] args) {
+	
+	String text2 = "helloworld";	
+	if (text_f() == text2)
+		System.out.println("두 주소가 같다");
+	else
+		System.out.println("두 주소가 다르다");
+
+	}
+
+	static String text_f() {
+		return new String("helloworld");
+	}
+	
+	static String text = "helloworld";
+}

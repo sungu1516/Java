@@ -1,0 +1,17 @@
+package com.day;
+
+public class note {
+
+	String name = "LeeSungu";
+
+	public static void main(String[] args) {
+		
+		int[] lotto = new int[45];
+		
+		for (int i = 1; i < lotto.length + 1; i++) {
+			lotto[i] = i;
+		}
+		
+		
+	}
+}

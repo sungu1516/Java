@@ -1,0 +1,23 @@
+package com.day;
+
+public class note {
+	
+	String name = "LeeSungu";
+	
+	public static void main(String[] args) {
+		
+		gugu(200);
+			
+		
+ }
+	
+	static void gugu(int s) {
+		for (int i = 2; i <= 9 || i <= s ; i++) {
+			for (int j = 1; j <= i && j < 20; j++) {
+				System.out.print(i + "*" + j + "=" + i*j + "\t");
+			}
+			System.out.println("___________________________________");
+		}
+	}
+}
+

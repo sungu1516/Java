@@ -1,0 +1,12 @@
+package JtoJ;
+
+public class Stringbuffer {
+
+	public static void main(String[] args) {
+		
+		Stringbuffer sb = new Stringbuffer();
+		sb.append("Hi");
+
+	}
+
+}

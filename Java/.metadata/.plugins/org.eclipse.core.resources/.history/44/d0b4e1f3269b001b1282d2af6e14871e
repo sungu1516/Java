@@ -1,0 +1,14 @@
+package com.day;
+
+public class note {
+
+	String name = "LeeSungu";
+
+	public static void main(String[] args) {
+		
+		
+		int j = 10;
+		int i = j >= 10? 1:0;
+		System.out.println(i);
+	}
+}

@@ -1,0 +1,81 @@
+package com.day;
+
+public class note {
+
+	public static void main(String[] args) {
+
+		sum_v(5);
+	}
+
+	static void return_char() {
+		// String 자료형에서 문자 하나하나를 가져와 char 배열 만들기 & contains 메서드의 사용
+
+		String text = "helloworld";
+		char[] cs = new char[text.length()];
+		for (int i = 0; i < cs.length; i++) {
+			cs[i] = text.charAt(i);
+			if (text.contains("ll")) { // equals와 다르게 문자열에서 일부가 포함되는가를 물어본다.
+				System.out.println("test");
+			}
+		}
+		System.out.println(cs);
+	}
+	
+	static void sum_v(int n) {
+
+		int sum = 0;
+		
+		switch (n) {
+		case 0:
+			sum += n;
+			n++;
+
+		case 1:
+			sum += n;
+			n++;
+
+		case 2:
+			sum += n;
+			n++;
+
+		case 3:
+			sum += n;
+			n++;
+			// 만약 여기서 case 100으로 설정해줘도 결과는 같다. 한번 걸리면 break가 없는 한 계속해서 실행된다.
+
+		case 4:
+			sum += n;
+			n++;
+
+		case 5:
+			sum += n;
+			n++;
+
+		case 6:
+			sum += n;
+			n++;
+
+		case 7:
+			sum += n;
+			n++;
+
+		case 8:
+			sum += n;
+			n++;
+
+		case 9:
+			sum += n;
+			n++;
+
+		case 10:
+			sum += n;
+			n++;
+
+		default:
+			System.out.println("Total : " + sum);
+			// break;
+		}
+
+	}
+	
+}

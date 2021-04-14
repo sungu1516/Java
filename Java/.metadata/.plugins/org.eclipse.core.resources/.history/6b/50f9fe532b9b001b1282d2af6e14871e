@@ -1,0 +1,23 @@
+package com.day;
+
+public class note {
+
+	String name = "LeeSungu";
+
+	public static void main(String[] args) {
+		
+		int money = 1000;
+		
+		if (money == 0) {
+			System.out.println("걸어가라");
+		}
+		
+		else if (money <= 1000) {
+			System.out.println("버스타라");
+		}
+		
+		else {
+			System.out.println("택시타라");
+		}
+	}
+}

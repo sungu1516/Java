@@ -1,0 +1,50 @@
+package com.day;
+
+public class Note1 {
+
+	public static void main(String[] args) {
+		test_2(10);
+		
+	}
+	
+	static int test_2(int c) {
+		
+		// for문을 사용하지 않고 반복 돌려보기 
+		
+		System.out.println(c);
+		c--;
+		if (c == 0)
+			return c;
+		;
+	}
+	
+	static void test_eternal() {
+		// 재귀함수의 예시 
+		System.out.println("test");
+		test_eternal();
+	}
+	
+	static void make_tri() {
+		for (int i = 1; i < 11; i++) {
+			for (int j = 10; j > 0; j--) { // i의 값에 따라 for구문 돌아가는 횟수가 달라진다. 
+				
+				if (i >= j) {
+					System.out.print('*');
+				}
+				
+				
+			}
+		System.out.println();
+		}
+
+		
+		
+//		for (int i = 3; i > -1; i--) {
+//			for (int j = 0; j < i+1; j++) { // i의 값에 따라 for구문 돌아가는 횟수가 달라진다. 
+//				System.out.print('*');			
+//			}
+//		System.out.println("");
+//		}
+		
+	}
+}
