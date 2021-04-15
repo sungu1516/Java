@@ -8,11 +8,23 @@ public class Day_0415 extends TA{
 
 	public static void main(String[] args) {
 		
-		A_2 a = new A_2();
-		String[] text_data = new String[] {"아이디", "이선구", "분당구 판교동", "010-2222-1111", "남여", "1234567", "28"};
+		A_2 a = new A_2(); // 이 때 a라는 객체는 A_2라는 클래스가 설계한 필드(변수)와 메서드 모두를 포함.
 		
-	
-		A_2 ac = new A_2(text_data[0], text_data[1], text_data[2], text_data[3], text_data[4], text_data[5], text_data[6]);
+
+		Gugudan gugu = new Gugudan();
+		gugu.Gugudan_method();
+		
+	}
+
+	static void data() {
+		
+		
+		A_2 a = new A_2();
+		Data data = new Data(); // data 객체가 만들어지며, 이는 Data 클래스로 찍어낸 것. 따라서 객체 내부적으로 text_data란 array가 존재한다. 
+		
+		
+		A_2 ac = new A_2(data.text_data[0], data.text_data[1], data.text_data[2], data.text_data[3], data.text_data[4], 
+				data.text_data[5], data.text_data[6]); // data에 있는 text_data에 접근하기 위해선 data.text_data 
 		
 		System.out.println(ac.id);
 		System.out.println(ac.name);
@@ -21,16 +33,23 @@ public class Day_0415 extends TA{
 		System.out.println(ac.gender);
 		System.out.println(ac.age);
 		System.out.println(ac.number);
-	}
-
-	static void dd () {
-		A_2 a = new A_2();
-		a.num_a = 100;
-		TA ta = new TA();
-		ta.num_ta = 50;
 		
-		Day_0415 day = new Day_0415();
-		day.num_ta = 1;
+		System.out.println(ac);
+		
+		B_2 b = new B_2("lee", "171", "70");
+		b.height = "75";
+		
+		System.out.println(b.height);
+	}
+	
+	static void dd () {
+//		A_2 a = new A_2();
+//		a.num_a = 100;
+//		TA ta = new TA();
+//		ta.num_ta = 50;
+//		
+//		Day_0415 day = new Day_0415();
+//		day.num_ta = 1;
 	}
 	
 	static void class_heri() {
@@ -42,7 +61,7 @@ public class Day_0415 extends TA{
 		
 //		System.out.println(a.b.number);
 //		System.out.println(a.number);
-//		System.out.println(a_1.count);
+//		System.out.println(a_1.count); 
 		
 		
 //		Day_0415 n_data = new Day_0415();

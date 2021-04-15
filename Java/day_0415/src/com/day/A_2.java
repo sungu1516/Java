@@ -10,7 +10,7 @@ public class A_2 {
 	String age;
 	String number;
 	
-	
+	// dto¿¡ ÇØ´ç 
 	public A_2(String id, String name, String addr, String phone, String gender, String age, String number) {
 		super();
 		this.id = id;
