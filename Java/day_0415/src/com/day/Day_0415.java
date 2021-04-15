@@ -2,11 +2,30 @@ package com.day;
 
 import java.util.ArrayList;
 
-public class Day_0405 extends A{
+import com.today.TA;
+
+public class Day_0415 extends TA{
 
 	public static void main(String[] args) {
-		A a = new A(1);
-		A a_1 = new A();
+		
+		A_2 a = new A_2();
+		
+		
+	}
+
+	static void dd () {
+		A_2 a = new A_2();
+		a.num_a = 100;
+		TA ta = new TA();
+		ta.num_ta = 50;
+		
+		Day_0415 day = new Day_0415();
+		day.num_ta = 1;
+	}
+	
+	static void class_heri() {
+//		A a = new A(1);
+//		A a_1 = new A();
 //		System.out.println(a.count);
 //		System.out.println(a.count2);
 //		System.out.println(a.count3);
@@ -16,14 +35,11 @@ public class Day_0405 extends A{
 //		System.out.println(a_1.count);
 		
 		
-		Day_0405 n_data = new Day_0405();
-		
-		n_data.count = 600;
-		System.out.println(n_data.number);
-		
+//		Day_0415 n_data = new Day_0415();
+//		
+//		n_data.count = 600;
+//		System.out.println(n_data.number);
 	}
-
-	
 	
 	static void list_methods() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
