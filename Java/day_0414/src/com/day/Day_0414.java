@@ -7,8 +7,22 @@ import java.util.List;
 public class Day_0414 {
 
 	public static void main(String[] args) {
-		string_to_char();
-		
+		String str = "Lee;Sun;Gu";
+
+		String[] str_arr = str.split(";");
+
+		char[][] char_arr = new char[str_arr.length][];
+
+		// 넣어보기
+
+		for (int i = 0; i < str_arr.length; i++) {
+			char_arr[i] = new char[str_arr[i].length()];
+			for (int j = 0; j < str_arr[i].length(); j++) {
+				char_arr[i][j] = str_arr[i].charAt(j);
+			}
+			System.out.println(char_arr[i]);
+		}
+
 	}
 
 	static void string_to_char() {
@@ -27,7 +41,7 @@ public class Day_0414 {
 			System.out.println(ca[i]);
 		}
 	}
-	
+
 	static void List_time() {
 		ArrayList<Integer> list = new ArrayList<Integer>(); // 주소값 할당
 		LinkedList<Integer> list_i = new LinkedList<Integer>();

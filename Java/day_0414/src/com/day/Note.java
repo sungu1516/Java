@@ -31,21 +31,30 @@ public class Note {
 //					System.out.println(list2.get(i)[j][k]);
 				}
 			}
-
-		}
+			
+			
+		} 	
 
 		// 새로운 3차 배열을 만들고, 이 배열 안에 위 값을 넣어본다.
 
 		int[][][] arr3 = new int[list2.size()][][];
 		
-//		System.out.println(arr3.length);
-		for (int i = 0; i < list2.size(); i++) { 
-			arr3[i] = new int[list2.get(i).length][]; // 3차배열의 크기부터 차례대로 설정 (주소 할당)
+
+		for (int i = 0; i < list2.size(); i++) {
+			//System.out.println(i);
+			arr3[i] = new int[list2.get(i).length][]; // 2차배열의 크기부터 차례대로 설정 (주소 할당)
+			
 			for (int j = 0; j < list2.get(i).length; j++) {
-				arr3[i][j] = new int[list2.get(i).length]; // 2차배열의 크기 설정
+				//System.out.println(j);
+				arr3[i][j] = new int[list2.get(i)[j].length]; // 1차배열의 크기 설정
+				
 				for (int j2 = 0; j2 < list2.get(i)[j].length; j2++) {
 					arr3[i][j][j2] = list2.get(i)[j][j2];
 					System.out.println(arr3[i][j][j2]);
+					
+					
+					
+					
 				}
 				
 			}
