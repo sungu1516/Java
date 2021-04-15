@@ -9,8 +9,18 @@ public class Day_0415 extends TA{
 	public static void main(String[] args) {
 		
 		A_2 a = new A_2();
+		String[] text_data = new String[] {"아이디", "이선구", "분당구 판교동", "010-2222-1111", "남여", "1234567", "28"};
 		
+	
+		A_2 ac = new A_2(text_data[0], text_data[1], text_data[2], text_data[3], text_data[4], text_data[5], text_data[6]);
 		
+		System.out.println(ac.id);
+		System.out.println(ac.name);
+		System.out.println(ac.addr);
+		System.out.println(ac.phone);
+		System.out.println(ac.gender);
+		System.out.println(ac.age);
+		System.out.println(ac.number);
 	}
 
 	static void dd () {
