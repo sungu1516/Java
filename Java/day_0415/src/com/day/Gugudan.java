@@ -12,7 +12,7 @@ public class Gugudan {
 
 		}
 	}
-	
+
 	public void Gugudan_method(int n) {
 		for (int i = 2; i < n + 1; i++) {
 
@@ -22,5 +22,14 @@ public class Gugudan {
 
 		}
 	}
-	
+
+	public void Gugudan_method(int n, int m) {
+		for (int i = n; i < m + 1; i++) {
+
+			Gugudan_inner gugudan = new Gugudan_inner(i);
+
+			System.out.println("*******************");
+
+		}
+	}
 }

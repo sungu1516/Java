@@ -8,11 +8,7 @@ public class Day_0415 extends TA{
 
 	public static void main(String[] args) {
 		
-		A_2 a = new A_2(); // 이 때 a라는 객체는 A_2라는 클래스가 설계한 필드(변수)와 메서드 모두를 포함.
-		
-
-		Gugudan gugu = new Gugudan();
-		gugu.Gugudan_method();
+		B b = new B();
 		
 	}
 
