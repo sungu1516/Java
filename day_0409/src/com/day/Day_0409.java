@@ -5,60 +5,68 @@ import java.util.Iterator;
 public class Day_0409 {
 
 	public static void main(String[] args) {
+		array_basic();
+	}
 
-//		int[] arr2 = new int[100];
-//
-//		for (int i = arr2.length-1; i > -1; i--) {
-//			arr2[i] = i+1;
-//		}
-//
-//		for (int i = 0; i < arr2.length; i++) {
-//			System.out.println(arr2[i]);
-//		}
+	static void array_basic () {
+		// 선언과 초기화 한번에
+		int[] int_arr = {1, 2, 3};
+		
+		// 선언을 먼저 해준 후 초기화.
+		String[] str_arr = new String[3]; // 크기 설정을 해줘야 한다. 
+		str_arr[0] = "Hello"; // 값을 하나하나 넣어준다. 
+		str_arr[1] = "Java";
+		str_arr[2] = "Im Sungu";
+		
+		// 출력
+		for (int i = 0; i < int_arr.length; i++) {
+			System.out.println(int_arr[i]);
+		}
+		
+		for (int i = 0; i < str_arr.length; i++) {
+			System.out.println(str_arr[i]);
+		}
+	}
+	
+	static void lotto_shuffle() {
 
+		// 번호들을 넣을 배열 만들기
 		int[] lotto = new int[45];
 
-		for (int i = 0; i < lotto.length; i++) {
+		for (int i = 0; i < lotto.length; i++) { // for문을 활용하여 1부터 45까지 삽입
 			lotto[i] = i + 1;
 		}
-//		
-//		for (int i = 0; i < lotto.length; i++) {
-//			System.out.println(lotto[i]);
-//		}
 
-		for (int i = 0; i < 1000; i++) {
-			int r = (int) (Math.random() * 44) + 1;
+		for (int i = 0; i < 1000; i++) { // for문을 통해 숫자를 섞어준다.
+			int r = (int) (Math.random() * 44) + 1; // 형변환. () 우선자를 신경써서 작성.
 			int temp = lotto[0];
 			lotto[0] = lotto[r];
 			lotto[r] = temp;
 
 		}
-		
-		// 6개 뽑아서 배열에 저장 
+
+		// 6개 뽑아서 배열에 저장
 		int[] lotto_6 = new int[6];
-		
+
 		for (int i = 0; i < lotto_6.length; i++) {
 			lotto_6[i] = lotto[i];
 		}
-		
+
 		// 오름차순으로 정렬하기
-		
 		for (int i = 0; i < lotto_6.length; i++) {
 			for (int j = i + 1; j < lotto_6.length; j++) {
-				if(lotto_6[i] > lotto_6[j]) {
+				if (lotto_6[i] > lotto_6[j]) {
 					int temp = lotto_6[i];
 					lotto_6[i] = lotto_6[j];
 					lotto_6[j] = temp;
 				}
 			}
 		}
+		// 최종 출력
 		for (int i = 0; i < lotto_6.length; i++) {
 			System.out.println(lotto_6[i]);
 		}
 	}
-	
-	
-	
 
 	static void asc_ex() {
 
@@ -84,13 +92,11 @@ public class Day_0409 {
 				}
 			}
 		}
-		
-		
-		
+
 		for (int i = 0; i < array_int.length; i++) { // 정렬된 결과를 출력해본다.
 			System.out.println(array_int[i]);
 		}
-		
+
 	}
 
 }
