@@ -13,5 +13,8 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.day.Day_0405"/>
     <fullyQualifiedTypeName name="com.today.TA"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="com.day.Gugudan_inner"/>
+=======
+>>>>>>> 3a1178277924d14dc432a35b60f94e5da649c485
 </qualifiedTypeNameHistroy>
