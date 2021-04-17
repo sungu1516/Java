@@ -1,0 +1,52 @@
+package com.day;
+
+public class Day_0408 {
+
+	public static void main(String[] args) {
+		
+		String name = "helloworld"; // 이 문자열은 배열인가? 아래에서 증명
+		
+		//System.out.println(name.length());          // 이와 같이 배열은 내재함수 (.뒤에 나오는) 가 존재한다. 한편, 결과로는 10이 나오는데 이는 글자수와 동일. 하지만 max index는 9이다. 항상 max index = 글자수 -1 
+			//forgugu(15);
+			gugudan2(11);
+			
+		}
+
+	
+	
+	static void gugudan_1(int i) {
+		
+		int m = i < 9 ? 9: i;		
+		for (int j = 1; j < m+1; j++) {
+				System.out.print(i + "*" + j + "=" + i*j + "\t");
+			}		
+		}
+
+	static void gugudan_0(int i) {
+		for (int j = 1; j < 10 || j < i+1; j++) {
+			System.out.print(i + "*" + j + "=" + i*j + "\t");
+		}
+	}
+	
+	
+	
+	
+	 
+	static void gugudan2(int s) {
+		s++;
+		if(s < 10)
+			s = 10;
+		else if(s > 19)
+			s = 20;
+		
+		int m = s;
+	
+		for (int i = 2; i < m; i++) {
+			gugudan_1(i);
+			System.out.println("---------------------");
+			}
+
+	}
+	
+	
+}

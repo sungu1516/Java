@@ -1,0 +1,15 @@
+package day0416;
+
+import java.util.TreeSet;
+
+public class Note {
+
+	public static void main(String[] args) {
+		TreeSet<A> at = new TreeSet<A>();
+		
+		
+		at.add(new A());
+		
+	}
+
+}

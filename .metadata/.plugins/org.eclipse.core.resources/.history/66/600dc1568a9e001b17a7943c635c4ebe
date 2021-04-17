@@ -1,0 +1,26 @@
+package day0416;
+
+import java.util.HashMap;
+
+public class Note2 {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		
+		map.put("이선구", 27);
+		map.put("김서경", 30);
+		
+//		System.out.println(map.get("이선구"));
+//		
+//		System.out.println(map.keySet());
+		
+		// 그렇다면 key값을 바로 출력할 수 있는 방법은?
+		
+		for (String string : map.keySet()) {
+			System.out.printf("이름은 %s이고 나이는 %d입니다.", string, map.get(string));
+			System.out.println();
+		}
+	}
+
+}

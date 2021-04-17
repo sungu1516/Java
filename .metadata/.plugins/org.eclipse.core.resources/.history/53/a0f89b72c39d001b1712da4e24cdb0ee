@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+
+public class Gugudan{
+	
+	ArrayList<ArrayList> list = new ArrayList<ArrayList>();
+
+	
+	public void Gugudan_method() {
+		
+		for (int i = 2; i < 10; i++) {
+
+			Gugudan_inner gugudan = new Gugudan_inner(i); // 이 때 만들어지는 객체 gugu를 의존객체라고 한다.
+			list.add(gugudan.str_list);
+//			System.out.println(list);
+			
+
+		}
+		System.out.println(list.size());
+
+	}
+
+	public void Gugudan_method(int n) {
+
+		for (int i = n; i < 10; i++) {
+
+			Gugudan_inner gugudan = new Gugudan_inner(i); // 이 때 만들어지는 객체 gugu를 의존객체라고 한다.
+			
+			list.add(gugudan.str_list);
+//			System.out.println(list);
+		}
+	}
+	
+	public void Gugudan_method(int n, int m) {
+
+		for (int i = n; i < m + 1; i++) {
+
+			Gugudan_inner gugu = new Gugudan_inner(i); // 이 때 만들어지는 객체 gugu를 의존객체라고 한다.
+			System.out.println("******************");
+		}
+	}
+}

@@ -1,0 +1,12 @@
+
+public class Base_note {
+
+	public static void main(String[] args) {
+		A a = new A(1);
+		B b = new B(5);
+		
+		System.out.println(a.number);
+		System.out.println(b.number);
+	}
+
+}

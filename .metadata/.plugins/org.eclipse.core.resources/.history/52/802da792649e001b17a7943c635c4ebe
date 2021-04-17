@@ -1,0 +1,19 @@
+package day0416;
+
+import java.util.TreeSet;
+
+public class A implements Comparable<A>{
+	
+	int count;
+	String str;
+	
+	@Override
+	public int compareTo(A o) {
+		if (this.count > o.count) { // 내림차순으로 정렬을 해보자. 
+			return 1;
+		}else {
+			return -1;
+		}
+	}
+	
+}

@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Gugudan_inner {
+
+	ArrayList<String> str_list = new ArrayList<String>();
+
+	public Gugudan_inner(int n) {
+		for (int i = 1; i < 10; i++) {
+//			System.out.println(n + "*" + i);  
+			this.str_list.add(String.format("%d * %d = %d \n", n, i, n * i));
+
+		}
+	}
+}

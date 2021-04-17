@@ -1,0 +1,14 @@
+package day0416;
+
+import java.util.TreeSet;
+
+public class A implements Comparable<A>{
+	
+	int count;
+	
+	@Override
+	public int compareTo(A o) {
+	
+		return -0;
+	}
+}
