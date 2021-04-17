@@ -1,9 +1,0 @@
-
-public class Add_Note {
-
-	public static void main(String[] args) {
-		Gugudan gugu = new Gugudan();
-		
-	}
-
-}

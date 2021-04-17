@@ -1,9 +1,0 @@
-
-public class Add_Note {
-
-	public static void main(String[] args) {
-		Gugudan gugu = new Gugudan(); // 객체 gugu는 Gugudan 클래스 안에 있는 모든 메서드와 변수를 사용할 수 있음. 포함함. 
-		
-	}
-
-}

@@ -1,7 +1,0 @@
-
-public class A extends B {
-	public A() {
-		super("sungu"); // 굳이 선언되지 않아도 B의 기본 생성자는 호출이 된다!
-		System.out.println("A의 기본 생성자입니다.");
-	}
-}
