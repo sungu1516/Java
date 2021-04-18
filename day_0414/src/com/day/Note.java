@@ -11,7 +11,7 @@ public class Note {
 	static void add_2darr_to_list() {
 		// 리스트에 2차배열 넣어보기
 
-		ArrayList<int[][]> list2 = new ArrayList<int[][]>();
+		ArrayList<int[][]> list2 = new ArrayList<int[][]>(); 
 
 		// 2차배열 만들기
 
