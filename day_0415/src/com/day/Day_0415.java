@@ -7,43 +7,30 @@ import com.today.TA;
 public class Day_0415 extends TA {
 
 	public static void main(String[] args) {
-
-		A_2 a = new A_2();
-		String[] text_data = new String[] { "아이디", "이선구", "분당구 판교동", "010-2222-1111", "남여", "1234567", "28" };
-
-		A_2 ac = new A_2(text_data[0], text_data[1], text_data[2], text_data[3], text_data[4], text_data[5],
-				text_data[6]);
-
-		System.out.println(ac.id);
-		System.out.println(ac.name);
-		System.out.println(ac.addr);
-		System.out.println(ac.phone);
-		System.out.println(ac.gender);
-		System.out.println(ac.age);
-		System.out.println(ac.number);
+		
+		
 	}
 
 	static void dd() {
-		A_2 a = new A_2();
-		a.num_a = 100;
-		TA ta = new TA();
+		TA ta = new TA(); // 다른 패키지의 클래스를 가져와 인스턴스를 만들 수 있음을 의미한다. 
 		ta.num_ta = 50;
 
-		Day_0415 day = new Day_0415();
-		day.num_ta = 1;
+		Day_0415 day = new Day_0415(); // 지금 메인 메서드가 존재하는 Day_0415란 클래스가 다른 패키지 내에 있는 TA 클래스를 상속할 수 있다. 
+		day.num_ta = 1; // 또한, TA의 변수에도 접근이 가능하다. (다만 접근제한자에 따라 다를 수 있음)
 	}
 
 	static void class_heri() {
+
 //		A a = new A(1);
 //		A a_1 = new A();
 //		System.out.println(a.count);
 //		System.out.println(a.count2);
 //		System.out.println(a.count3);
-
+//
 //		System.out.println(a.b.number);
 //		System.out.println(a.number);
 //		System.out.println(a_1.count);
-
+//
 //		Day_0415 n_data = new Day_0415();
 //		
 //		n_data.count = 600;
