@@ -1,9 +1,9 @@
 package com.day;
 
-public class Note1 {
+public class Recursion {
 
 	public static void main(String[] args) {
-		make_tri();
+		test_1(10);
 
 	}
 
@@ -32,16 +32,4 @@ public class Note1 {
 		test_eternal();
 	}
 
-	static void make_tri() {
-		for (int i = 1; i < 6; i++) {
-			for (int j = 5; j > 0; j--) { // i의 값에 따라 for구문 돌아가는 횟수가 달라진다.
-
-				if (i >= j) {
-					System.out.print('*');
-				}
-
-			}
-			System.out.println();
-		}
-	}
 }

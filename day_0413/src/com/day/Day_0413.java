@@ -7,7 +7,7 @@ public class Day_0413 {
 
 	public static void main(String[] args) {
 		
-		add_char_to_string();
+		parser();
 		
 	}
 
@@ -33,6 +33,7 @@ public class Day_0413 {
 		System.out.println("size : " + list.size());
 
 		ArrayList<String> string_list = new ArrayList<String>();
+		
 		string_list.add("Java");
 		string_list.add("Python");
 		string_list.add("C");
@@ -54,30 +55,6 @@ public class Day_0413 {
 
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
-		}
-	}
-
-	static void gugu_array() {
-		// 2차 배열 사용해서 구구단 구현
-
-		// 우선 필요한 숫자들이 들어간 2차 배열을 만들어준다.
-		int[][] num9 = new int[2][];
-
-		num9[0] = new int[8];
-		num9[1] = new int[9];
-
-		for (int i = 0; i < num9[0].length; i++) {
-			num9[0][i] = i + 2;
-		}
-		for (int i = 0; i < num9[1].length; i++) {
-			num9[1][i] = i + 1;
-		}
-
-		// 이후 이중 for문을 활용하여 2차배열 안의 각 1차배열간 가진 값들을 곱해 츌력한다.
-		for (int i = 0; i < num9[0].length; i++) {
-			for (int j = 0; j < num9[1].length; j++) {
-				System.out.printf("%d * %d = %d \n", num9[0][i], num9[1][j], (num9[0][i]) * (num9[1][j]));
-			}
 		}
 	}
 
