@@ -2,4 +2,18 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.day.Gugudan"/>
     <fullyQualifiedTypeName name="com.day.Gugudan_inner"/>
+    <fullyQualifiedTypeName name="com.day.Static_test"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.day.Note"/>
+    <fullyQualifiedTypeName name="javax.xml.validation.Schema"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="com.day.PhoneS"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.day.PhoneData"/>
 </qualifiedTypeNameHistroy>
