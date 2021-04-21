@@ -25,8 +25,9 @@ public class Bs implements I {
 		list.add(serial);
 		return list;
 	}
-
-	// Generate Setters
+	
+	
+	// 클래스의 필드 값을 저장해주기 위해 Setters 사용
 
 	public void setName(String name) {
 		this.name = name;

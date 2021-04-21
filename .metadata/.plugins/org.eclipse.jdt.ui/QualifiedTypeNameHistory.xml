@@ -14,6 +14,9 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.day.PhoneData"/>
+    <fullyQualifiedTypeName name="com.day.I2"/>
+    <fullyQualifiedTypeName name="com.day.Bs"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.day.A"/>
 </qualifiedTypeNameHistroy>

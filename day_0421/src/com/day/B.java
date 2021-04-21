@@ -13,8 +13,9 @@ public class B extends Bs {
 	private String[] plan = { "40000", "99000", "29000", "89000", "119000" };
 	private String[] serial = { "기계번호_1234", "기계번호_1234", "기계번호_1234", "기계번호_1234", "기계번호_1234" };
 
-	public B(int i) {
 
+	public B(int i) {
+		
 		setName(name[i]);
 		setAddr(addr[i]);
 		setRe_num(re_num[i]);
@@ -24,6 +25,7 @@ public class B extends Bs {
 		setPlan(plan[i]);
 		setSerial(serial[i]);
 	}
+	
 	public B() {
 		// TODO Auto-generated constructor stub
 	}
