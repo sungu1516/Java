@@ -32,8 +32,8 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.day.Thread_ex"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.day.Cal"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -47,4 +47,17 @@
     <fullyQualifiedTypeName name="java.awt.Label"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+=======
+    <fullyQualifiedTypeName name="com.day.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="com.day.test"/>
+    <fullyQualifiedTypeName name="com.day.Test2"/>
+    <fullyQualifiedTypeName name="com.day.Test"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="com.day.Make_dir"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+>>>>>>> 420d107b6a5b8fb501b088f0d1a15e92450ac2d6
 </qualifiedTypeNameHistroy>
