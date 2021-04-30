@@ -11,6 +11,7 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.swing.JToggleButton;
 
 public class test {
 
@@ -47,57 +48,55 @@ public class test {
 		frame.setBounds(300, 50, 650, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+
 		JPanel panel = new JPanel();
-		panel.setBounds(25, 48, 586, 467);
-		panel.setBackground(new Color(0, 100, 0));
-		panel.setForeground(new Color(0, 100, 0));
+		panel.setBackground(new Color(255, 182, 193));
+		panel.setBounds(55, 167, 525, 228);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
-		
-		JLabel lblNewLabel = new JLabel("Label");
-		lblNewLabel.setForeground(new Color(211, 211, 211));
-		lblNewLabel.setBackground(new Color(255, 182, 193));
-		lblNewLabel.setFont(new Font("±¼¸²", Font.PLAIN, 30));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(18, 10, 540, 66);
-		
-		panel.add(lblNewLabel);
-		
+
 		JButton btnNewButton = new JButton("100");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.out.println(btnNewButton.getText());
-				lblNewLabel.setText(btnNewButton.getText());
-			}
-		});
-		btnNewButton.setFont(new Font("Å¸ÀÌÆ÷_½Ö¹®µ¿ B", Font.PLAIN, 15));
-		btnNewButton.setBounds(34, 100, 150, 267);
+		btnNewButton.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		btnNewButton.setBounds(19, 67, 149, 94);
 		panel.add(btnNewButton);
-		
-		JButton btnNewButton1 = new JButton("200");
-		btnNewButton1.setFont(new Font("Å¸ÀÌÆ÷_½Ö¹®µ¿ B", Font.PLAIN, 15));
-		btnNewButton1.setBounds(218, 100, 150, 267);
-		btnNewButton1.addActionListener(new ActionListener() {
+
+		JButton btnNewButton_1 = new JButton("200");
+		btnNewButton_1.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		btnNewButton_1.setBounds(187, 67, 149, 94);
+		panel.add(btnNewButton_1);
+
+		JButton btnNewButton_2 = new JButton("300");
+		btnNewButton_2.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		btnNewButton_2.setBounds(355, 67, 149, 94);
+		panel.add(btnNewButton_2);
+
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setFont(new Font("±¼¸²", Font.BOLD, 30));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(63, 34, 509, 96);
+		frame.getContentPane().add(lblNewLabel);
+
+		JButton btnNewButton_3 = new JButton("on/off");
+
+		btnNewButton_3.addActionListener(new ActionListener() {
+			int count = 0;
+
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(btnNewButton1.getText());
-				lblNewLabel.setText(btnNewButton1.getText());
+				btnNewButton_3.setText("ÁÖ¹®");
+				count++;
+				if (count == 2) {
+					btnNewButton_3.setText("È®ÀÎ");
+				}
+				if (count == 3) {
+					frame.setVisible(false);
+				}
+
 			}
 		});
-		panel.add(btnNewButton1);
-		
-		JButton btnNewButton2 = new JButton("300");
-		btnNewButton2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.out.println(btnNewButton2.getText());
-				lblNewLabel.setText(btnNewButton2.getText());
-			}
-		});
-		btnNewButton2.setFont(new Font("Å¸ÀÌÆ÷_½Ö¹®µ¿ B", Font.PLAIN, 15));
-		btnNewButton2.setBounds(402, 100, 150, 267);
-		panel.add(btnNewButton2);
-		
-		
+		btnNewButton_3.setForeground(new Color(255, 0, 0));
+		btnNewButton_3.setFont(new Font("±¼¸²", Font.BOLD, 15));
+		btnNewButton_3.setBounds(412, 440, 168, 45);
+		frame.getContentPane().add(btnNewButton_3);
 
 	}
 }
