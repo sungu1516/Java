@@ -229,8 +229,6 @@ public class swing_calculator {
 
 		case "C":
 			initial();
-			tem = 0;
-			type = "";
 			System.out.println(text);
 			lblNewLabel.setText("0");
 			break;
@@ -238,37 +236,33 @@ public class swing_calculator {
 		case "+":
 			tem += Long.parseLong(lblNewLabel.getText());
 			type = "+";
-			initial();
+			repo = "";
 			System.out.println(text);
 			break;
 
 		case "-":
 			tem += Long.parseLong(lblNewLabel.getText());
 			type = "-";
-			initial();
+			repo = "";
 			System.out.println(text);
 			break;
 
 		case "*":
 			tem += Long.parseLong(lblNewLabel.getText());
 			type = "*";
-			initial();
+			repo = "";
 			System.out.println(text);
 			break;
 
 		case "/":
 			tem += Long.parseLong(lblNewLabel.getText());
 			type = "/";
-			initial();
+			repo = "";
 			System.out.println(text);
 			break;
 
 		case "=":
-			initial();
-			System.out.println(type);
-			System.out.println(tem);
-			System.out.println(Long.parseLong(lblNewLabel.getText()));
-			
+
 			if (type == "+") {
 				lblNewLabel.setText(tem + Long.parseLong(lblNewLabel.getText()) + "");
 			} else if (type == "-") {
@@ -279,8 +273,7 @@ public class swing_calculator {
 				lblNewLabel.setText(tem / Long.parseLong(lblNewLabel.getText()) + "");
 			}
 
-			tem = 0;
-			type = "";
+			initial();
 			break;
 
 		default:
@@ -289,6 +282,8 @@ public class swing_calculator {
 	}
 
 	void initial() {
+		tem = 0;
+		type = "";
 		repo = "";
 
 	}
