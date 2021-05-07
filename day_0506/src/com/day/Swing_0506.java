@@ -135,21 +135,16 @@ public class Swing_0506 {
 				btn7.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						
-						System.out.println("circulator setnum2 test : " + num2);
-						System.out.println("circulator getsign test : " + getSign());
+			
 						calcurator();
-						System.out.println("circulartor 메서드 작동");
-						System.out.println("circulator getsign test : " + getSign());
-						System.out.println("circulator setnum2 test : " + num2);
+						
 						setNum1(0);
+						
 						setNum2(0);
+						
 						isReset[0] = true; // isReset 후에 setSign("")을 호출해야 3항 연산이 정상 작동함.
+						
 						setSign(""); // setSign("")을 먼저하면 if (isReset[0] == false) 때문에 비정상 작동.
-						System.out.println("setsign() 호출");
-						System.out.println("num2 test : " + num2);
-						System.out.println("num1 test : " + num1);
-						System.out.println("getsign() 호출" + getSign());
 					}
 				});
 				btn7.setBounds(132, 202, 51, 51);
@@ -161,8 +156,7 @@ public class Swing_0506 {
 						textField.setText("0");
 						setNum1(0);
 						setNum2(0);
-						System.out.println(num1);
-						System.out.println(num2);
+
 						isReset[0] = true;
 						setSign("");
 
