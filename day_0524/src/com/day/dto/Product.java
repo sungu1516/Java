@@ -18,6 +18,35 @@ public class Product {
 		this.prod_mf_dt = prod_mf_dt;
 		this.prod_detail = prod_detail;
 	}
+	
+	
+	// hashCode(), equals() 를 Override 함으로서 문자내용이 같은 p 객체는 동일하다고 강제로 판단하게 함
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((prod_no == null) ? 0 : prod_no.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		if (prod_no == null) {
+			if (other.prod_no != null)
+				return false;
+		} else if (!prod_no.equals(other.prod_no))
+			return false;
+		return true; //현재객체의 상품번호(prod_no)와 매개변수 객체의 상품번호가 같은 경우만 true를 리턴한다.
+	}
+
+
 
 	public Product(String prod_no, String prod_name, int prod_price) {
 		this(prod_no, prod_name, prod_price, null, null); // 위에서 만든 생성자를 호출해준다.

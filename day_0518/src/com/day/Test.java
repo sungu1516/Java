@@ -1,22 +1,24 @@
 package com.day;
 
-public class Exception {
+public class Test {
+
+	public void sayNick(String nick) throws FoolException {
+
+		if ("fool".equals(nick)) {
+			throw new FoolException();
+		}
+
+	}
 
 	public static void main(String[] args) {
-
+		Test test = new Test();
 		try {
-			
-			String data = null;
-			String[] data2 = {"lee"};
-//			System.out.println(data.toString());
-			System.out.println(data2[3]);
-			
-
-		} catch (NullPointerException e) {
-			System.out.println("Error_nullpointer");
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Error_index");
+			test.sayNick("fool");
+			test.sayNick("genious");
+		} catch (FoolException e) {
+			System.out.println("Foolexception ¹ß»ý");
 		}
+
 	}
 
 }
