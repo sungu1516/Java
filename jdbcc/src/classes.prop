@@ -1,0 +1,2 @@
+#classes.prop
+productDAO=com.day.dao.ProductDAOFile
