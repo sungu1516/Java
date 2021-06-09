@@ -56,6 +56,7 @@ public class CustomerService {
 		if (c.getEnabled() == 0) {
 			throw new ModifyException("탈퇴작업은 할 수 없습니다");
 		}
+		c.setEnabled(-1); //필터링. 잘못된 값이 들어왔을 때 항상 -1로 고정. 
 		dao.update(c);
 	}
 	public void leave(Customer c) throws ModifyException {

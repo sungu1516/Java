@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="day_0503.test"/>
-<fullyQualifiedTypeName name="day_0503.action"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="day_0503.ButtonEvent"/>
 <fullyQualifiedTypeName name="java.awt.TextField"/>
@@ -19,11 +16,9 @@
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="com.day.dao.ProductDAOFile"/>
@@ -42,16 +37,27 @@
 <fullyQualifiedTypeName name="com.day.FoolException"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.day.dao.ProductDAOOracle"/>
+<fullyQualifiedTypeName name="com.day.service.ProductService"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.day.dao.CustomerDAO"/>
+<fullyQualifiedTypeName name="com.day.service.CustomerService"/>
+<fullyQualifiedTypeName name="com.day.exception.ModifyException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.day.exception.AddException"/>
+<fullyQualifiedTypeName name="com.day.dto.OrderLine"/>
 <fullyQualifiedTypeName name="com.day.dto.Product"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.day.sql.Myconnection"/>
+<fullyQualifiedTypeName name="com.day.dao.orderDAOOracle"/>
+<fullyQualifiedTypeName name="com.day.dto.OrderInfo"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.day.dto.Customer"/>
+<fullyQualifiedTypeName name="com.day.dao.CustomerDAOOracle"/>
 <fullyQualifiedTypeName name="com.day.exception.FindException"/>
-<fullyQualifiedTypeName name="com.day.service.ProductService"/>
 </qualifiedTypeNameHistroy>

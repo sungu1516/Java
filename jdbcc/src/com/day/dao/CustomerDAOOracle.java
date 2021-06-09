@@ -98,33 +98,73 @@ public class CustomerDAOOracle implements CustomerDAO {
 
 	@Override
 	public void update(Customer c) throws ModifyException {
-		Connection con = null;
-
-		try {
-			con = Myconnection.getConnection();
-		} catch (SQLException e) {
-			e.printStackTrace();
+		
+		String updateSQL = "UPDATE customer SET"; //pwd = 'p1'
+		String updateSQL1 = " WHERE id = ?";
+		
+		boolean flag = false; //변경할 값이 있는 경우 true
+		
+		String pwd = c.getPwd();
+		if(pwd != null && !pwd.equals("")) {
+			if(flag) {
+				updateSQL += " ";
+			}
+			updateSQL += "pwd = '" + pwd + "'";
+			flag = true;
 		}
-
-		String updateSQL = "UPDATE customer SET pwd = ?, name = ?, buildingno = ?, enabled = ? WHERE id = ?";
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-
-		try {
-			pstmt = con.prepareStatement(updateSQL);
-			pstmt.setString(1, c.getPwd());
-			pstmt.setString(2, c.getName());
-			pstmt.setString(3, c.getBuildingno());
-			pstmt.setInt(4, c.getEnabled());
-
-			pstmt.executeUpdate();
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new ModifyException(e.getMessage());
-		} finally {
-			Myconnection.close(con, pstmt, rs);
+		
+		String buildingno = c.getBuildingno();
+		if(buildingno != null && !buildingno.equals("")) {
+			if(flag) {
+				updateSQL += ",";
+			}
+			updateSQL += "buildingno = '" + buildingno + "'";
+			flag = true;
 		}
+		
+		int enabled = c.getEnabled();
+		if( enabled > -1) {
+			if(flag) {
+				updateSQL += ",";
+			}
+			updateSQL += "enabled = '" + enabled + "'";
+			flag = true;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+//		Connection con = null;
+//
+//		try {
+//			con = Myconnection.getConnection();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//
+//		String updateSQL = "UPDATE customer SET pwd = ?, name = ?, buildingno = ?, enabled = ? WHERE id = ?";
+//		PreparedStatement pstmt = null;
+//		ResultSet rs = null;
+//
+//		try {
+//			pstmt = con.prepareStatement(updateSQL);
+//			pstmt.setString(1, c.getPwd());
+//			pstmt.setString(2, c.getName());
+//			pstmt.setString(3, c.getBuildingno());
+//			pstmt.setInt(4, c.getEnabled());
+//
+//			pstmt.executeUpdate();
+//
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//			throw new ModifyException(e.getMessage());
+//		} finally {
+//			Myconnection.close(con, pstmt, rs);
+//		}
 	}
 
 }

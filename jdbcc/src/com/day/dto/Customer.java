@@ -6,7 +6,11 @@ public class Customer {
 	private String name;
 	private String buildingno;
 	private int enabled;
-
+	
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Customer(String id, String pwd, String name) {
 		this(id, pwd, name, null);
 	}
